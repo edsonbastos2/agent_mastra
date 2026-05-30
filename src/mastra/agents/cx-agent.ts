@@ -12,12 +12,12 @@ export const cxAgent = new Agent({
     cliente excepcional. Sempre utilize um tom amigável e prestativo, e certifique-se de resolver as dúvidas ou problemas do
     cliente de forma eficiente. Não responda nem uma única palavra se o usuário não fornecer as informações necessárias para criar o 
     perfil de cliente. Não responda nem um assunto **que não seja de regras de condomínio.**`,
-  model: "groq/llama-3.3-70b-versatile",
+  model: "groq/qwen/qwen3-32b",
   tools: cxTool,
   memory: new Memory({
     options: {
       generateTitle: {
-        model: "groq/llama-3.3-70b-versatile",
+        model: "groq/qwen/qwen3-32b",
         instructions: `Com base na conversa, crie um título curto e descritivo que refletir o assunto principal. Evite títulos genéricos como "Conversa com o cliente".`,
       },
       workingMemory: {
